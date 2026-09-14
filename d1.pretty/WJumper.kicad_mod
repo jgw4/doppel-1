@@ -1,0 +1,121 @@
+(footprint "WJumper"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0fc042f2-6154-47c5-8623-a55580496b86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "WJumper"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "90a29836-025d-4841-a251-14629006f6fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "66b4b8f1-503d-4a6e-b853-977da4c99cbc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0bf39111-ac5e-434a-8c17-1fcdf7750ac4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.59436 -2.49682)
+		(end -0.29718 -1.24968)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "0c7fee50-badd-44a5-b87c-ac7e757d7c6f")
+	)
+	(fp_line
+		(start -0.29718 -1.24968)
+		(end 0 -2.49682)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "56b0fd30-c34f-443a-9e12-47f99d25be2b")
+	)
+	(fp_line
+		(start 0 -2.49682)
+		(end 0.29464 -1.24968)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "69a5eb1e-4325-4c8e-882b-f4eee7268f24")
+	)
+	(fp_line
+		(start 0.29464 -1.24968)
+		(end 0.59182 -2.49682)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "76c956cd-b749-4377-b4a3-094e329806e6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "34e9c59e-9626-4291-8ae5-f524be451bab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "20" thru_hole circle
+		(at 0 0)
+		(size 1.50114 1.50114)
+		(drill 0.889)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "761b9d1d-c023-4333-a7d0-8de38c80c80b")
+	)
+	(embedded_fonts no)
+)

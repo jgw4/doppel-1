@@ -1,0 +1,258 @@
+(footprint "CP_Axial_5300uF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CP, Axial series, Axial, Horizontal, pin pitch=75mm, length*diameter=67*26mm^2, Electrolytic Capacitor, http://www.vishay.com/docs/42037/53d.pdf")
+	(tags "CP Axial series Axial Horizontal pin pitch 75mm  length 67mm diameter 26mm Electrolytic Capacitor")
+	(property "Reference" "REF**"
+		(at 37.5 -14.12 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fa57f4a1-b3ef-4098-b444-d14888b837b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CP_Axial_5300uF"
+		(at 35.849 2.032 0)
+		(layer "F.Fab")
+		(uuid "c1fedc27-daa8-45f2-84b5-29a10c696a4e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d22ad856-7132-4f6a-954a-684c63a7623c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4101fac-c0af-4cdb-9278-04df513c2bc9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "capacitor/THT/other"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6b4a468d-b25d-4194-801c-c2de532f7c1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start 0.762 -13.25)
+		(end 67.945 13.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b90f4b77-3311-4c89-967a-7a5a66c370d5")
+	)
+	(fp_line
+		(start 0 0)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a77d5890-cd53-45d6-a3cf-eff30453c6aa")
+	)
+	(fp_line
+		(start 0.762 -13)
+		(end 0.762 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2ce31e86-afe9-49b0-b2c4-00747bd179f0")
+	)
+	(fp_line
+		(start 0.762 -13)
+		(end 2.442 -13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7941a774-6b34-4c18-9155-b8b8cd01326c")
+	)
+	(fp_line
+		(start 0.762 13)
+		(end 2.442 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e5347e4e-e62d-4214-87c3-1802523faf1e")
+	)
+	(fp_line
+		(start 2.442 -13)
+		(end 3.342 -12.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9dfe2745-8229-49e4-bb01-76cb35742e23")
+	)
+	(fp_line
+		(start 2.442 13)
+		(end 3.342 12.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bd1e77da-bbb8-4be2-91e5-2d70380bc5da")
+	)
+	(fp_line
+		(start 2.462 0)
+		(end 4.262 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "97f3cb07-4d94-437c-a49e-7fd916f2cb0a")
+	)
+	(fp_line
+		(start 3.342 -12.1)
+		(end 4.242 -13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "52913ec1-809a-40d3-bfc2-ea69f39e3a88")
+	)
+	(fp_line
+		(start 3.342 12.1)
+		(end 4.242 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dfe34637-21ea-414d-88b2-e820ad8d53c3")
+	)
+	(fp_line
+		(start 3.362 -0.9)
+		(end 3.362 0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8a0720dc-053c-464f-bbe8-8c88e24175f2")
+	)
+	(fp_line
+		(start 4.242 -13)
+		(end 67.8688 -13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cca736b2-70f2-4e75-9a95-9da758536e9a")
+	)
+	(fp_line
+		(start 4.242 13)
+		(end 67.8688 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85741a0a-72a2-41b2-9db9-2352f1b625d4")
+	)
+	(fp_line
+		(start 67.8688 -13)
+		(end 67.8688 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d817e0ca-9853-4b1f-a69b-e8d361469952")
+	)
+	(fp_line
+		(start 75 0)
+		(end 71 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4649d99f-1f53-4d82-b9c1-40f48517fbba")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 35.849 0 0)
+		(layer "F.Fab")
+		(uuid "391d61fd-0e8e-47be-b791-55cf708bcb9e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 4.699 4.699)
+		(drill 1.397)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "f8799d4c-e313-4b9a-9bd3-6083330f1ea2")
+	)
+	(pad "2" thru_hole circle
+		(at 68.58 0)
+		(size 4.699 4.699)
+		(drill 1.397)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f97abade-ea4a-4b2f-bc1a-7b03e60186d0")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Axial_L67.0mm_D26.0mm_P75.00mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

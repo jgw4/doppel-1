@@ -1,0 +1,203 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b38b6155-24ef-4e7a-9d9a-2cb213939c19")
+	(paper "A4")
+	(title_block
+		(title "Apple I - Processor Section")
+		(date "2019-08-11")
+		(comment 1 "Drawn by Nicolas Robin")
+	)
+	(lib_symbols)
+	(sheet
+		(at 22.86 129.54)
+		(size 254 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-00005d344fb6")
+		(property "Sheetname" "Terminal Section"
+			(at 22.86 125.6534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 7.62 7.62)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "terminal.kicad_sch"
+			(at 22.86 165.6846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainboard"
+				(path "/b38b6155-24ef-4e7a-9d9a-2cb213939c19"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 27.94)
+		(size 254 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-00005d344fd9")
+		(property "Sheetname" "Power Supply"
+			(at 22.86 24.0534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 7.62 7.62)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply.kicad_sch"
+			(at 22.86 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainboard"
+				(path "/b38b6155-24ef-4e7a-9d9a-2cb213939c19"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 78.74)
+		(size 254 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-00005d3a5db0")
+		(property "Sheetname" "Processor Section"
+			(at 22.86 74.8534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 7.62 7.62)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "processor.kicad_sch"
+			(at 22.86 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainboard"
+				(path "/b38b6155-24ef-4e7a-9d9a-2cb213939c19"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 168.91)
+		(size 147.32 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ce884242-f600-4f09-b1c9-b574d7c26c83")
+		(property "Sheetname" "Transformers"
+			(at 22.86 168.1984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "transformers.kicad_sch"
+			(at 22.86 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainboard"
+				(path "/b38b6155-24ef-4e7a-9d9a-2cb213939c19"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
