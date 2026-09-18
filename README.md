@@ -1,17 +1,28 @@
 ![Doppel-1 Current Status](/img/doppel1status.png)
 
 # About the "Doppel-1"
-This repository contains the "Doppel-1", an Apple-1 Replica PCB that is somewhat unique among clone boards floating around the internet. This is being done by working off of an imported copy of gerber files for the "PCB-11" replica that I found on [Applefritter Forums](https://www.applefritter.com/content/apple-1-replica-gerber-files), which were posted originally on a facebook group. The "PCB-11" is, I believe, the most common replica board you will see pictures of online as this is the only replica (that I know of) where the gerbers have been made publicly available. These are often marked on the back in the bottom right with "Apple 1 replica 2012-2016" in soldermasked copper. If a replica board was purchased post-2020, it is likely that it is based on these gerber files, as the Mimeo-1 has been out of production since that time and up unto the time of writing.
+This repository contains the "Doppel-1", an Apple-1 Replica PCB. It is unique among clone boards in that the source design files are completely open-source, and It is built in standard EDA fashion, where each component on the board is linked to a symbol on a full schematic of the apple-1. This also allows for generating gerber files at the source, easy modification, and the ability to highlight trace sets on the board via the net selector. This makes it very useful when diagnosing build issues. It also features a near full set of 3d components, which allows an accurate step file to be exported.
 
-The Doppel-1 can be considered a complete native rebuilding of "PCB-11" in KiCad, whereby the board has its own set of custom footprints that are unique to the apple-1, 3d models, native KiCad filled zones, rule areas, text elements (where possible), traces, and netclasses, as well as error fixes and fabrication notes for a production-ready PCB. Notable mistakes from the original vary from the file itself, to the schematics, to fabrication choices by the customer or the manufacturer. Clarifying remarks have been made to ensure that the PCB is being fabricated to make a reasonable replica. 
+Great care has been taken to create a custom library of footprints that match the original apple-1. In fact, every symbol on the board is custom. This preserves the aesthetics of the pads and silkscreens while allowing for pin-pin linkage from the schematic.
 
-## Status of the Doppel-1
+Clarifying remarks have been made to ensure that the PCB is being fabricated to make a reasonable replica. If you desire to make your own board from these files, please read the Manufacturing Notes below.
 
-* All footprints have been designed, linked, and placed on the board
-* All board text is contained within the top board layer. I have decided that there is no font matched well enough at this time to rely on a font alone. Only shapes have been redrawn at the footprint level.
+## History
+This project started by importing the gerber files for the "PCB-11" replica that I found on [Applefritter Forums](https://www.applefritter.com/content/apple-1-replica-gerber-files), which were posted originally on a facebook group. It is the only clone board that I know of where the gerber files have been made publicly available. Little by little, I began replacing gerber features with native KiCad features, until there was almost nothing left of the original gerber (see "Open Issues..." Below). A theseus ship of sorts, but improved.
+
+
+
+## Open Issues of the Doppel-1
+
+* All board silkscreen text is contained within the top board layer. I have decided that there is no font matched well enough at this time to rely on a font alone. Only shapes have been redrawn at the footprint level.
 * Need to fix issues with a few improper diode silkscreen arrow placements
-* Proper trace widths and clearances still need assigned to all traces, ensuring proper spacing from all solder pads and enforcing a more rigorous Design Rules Check.
+* Proper widths and clearances still need assigned to all traces, ensuring proper spacing from all solder pads and enforcing a more rigorous Design Rules Check.
+* I am still not entirely certain the board mounting holes are in the correct position. I had modified it slightly see point 7 below.
 * a few remaining schematic parity errors.
+* some copper layer graphics are still drawn as tracks from the gerber import. These need converted to graphic shapes to satisfy DRC warnings
+* the edge connector fingers still contain gerber fill tracks instead of native kicad filled shapes. this needs to be created and turned into a footprint.
+* some footprints still don't have 3d models assigned. I think at this time only the molex 4-pin and 6-pin
+* I would like to develop a custom font based off the text on this board, so it can be applied as text elements rather than drawn shapes.
 
 ## Design Notes And Changes
 I have made some remarks about my observations so far:
@@ -36,24 +47,29 @@ I have made some remarks about my observations so far:
 - The DIP and breadboard solder pads should be wider although it only really matters in the breadboard area. - See point 2 above, much scrutiny went into the shape of the dip pads on this board.
 - The video adjustment pot pads are  narrower by 0.025", making it difficult to insert the trimpot. - The 100 Ohm pot has been replaced with a standard footprint that should rectify the issue
 
+9) the LM323 footprint has been moved slightly to the left, on the original and observed builds, the heatsink would hang slightly over the board.
+
 ## Manufacturing Notes:
 
 If you are going to get your own replica board manufactured, read this first:
 
+0) Boards are to be purchased at your own risk. I do not take responsibility for any defects, design or otherwise, contained within your finished boards.
+
 1) Normally the green finish provided by PCB manufacturers is way too dark. It has become clear to me that it will be almost impossible to replicate near-exact finishes for small volume with any direct-to-customer fabricators. If the fabricator does allow for lighter green finishes and/or matte green, these colors should be selected instead of a "Standard" green.
 
-2) Boards that are finished with hard gold or using an ENIG process (i.e. full-board gold plating) are unable to also accomodate silkscreening on top of non-soldermasked copper. This is extremely evident in the top-right corner of the board where diode markings are missing where the gold is plated over the copper. It is understandable to desire gold for the longevity of the board, but doing so will produce a poor replica. Gold plating should be confined to the edge fingers only, with the rest done in HAL SnPb.
+2) Boards that are finished with an ENIG process (i.e. full-board gold plating) are unable to also accomodate silkscreening on top of non-soldermasked copper. This is extremely evident in the top-right corner of the board where diode markings are missing where the gold is plated over the copper. It is understandable to desire gold for the longevity of the board, but doing so will produce a poor replica. ENIG is also not sufficient for edge fingers; since ENIG is a softer finish, it will wear just as if it were plated like a standard PCB. Hard Gold plating (not ENIG) is best for edge fingers, and should be confined to the edge fingers only, with the rest done in HAL SnPb.
+
+3) I request that anyone exporting their own gerbers to not remove the replica signifying text on the bottom right on the back of the board. This board contains "Doppel-1 Rev. 2026" on the back copper layer underneath a silkscreen, so it is very discrete. While I think that there are many people out there that can detect replica boards without an unambiguous stamp on the board, I request all reading to preserve the marking to avoid the perception or attempts at counterfeiting.
 
 ## Why?
-
-Why did I do this? as Mike Willegal said, If you have to ask that question, this project isn't for you. I have had a strange fascination for the Apple-1 ever since I was a kid. I've been drawn to the technical artistry of the board, the simplicity of it, and find the assembly process and case design around it a very cool method of self-expression.
+I have had a strange fascination for the Apple-1 ever since I was a kid. Even though I am not a competent electronics hobbyist or electrical engineer, I've been drawn to the technical artistry of the board, and find the assembly process and case design around it a very cool method of self-expression. I suppose also there is a love of historical artifact that comes with people who love these computers too, and I am very much in that camp.
 
 # Contributing
-1) To properly view some of the pcb file's text elements, please download and install "Routed Gothic" font located in `/doc/`. This is the closest match I have found to the original PCB lettering in font form and is based on the Leroy stenciling system common with draftsman before computer fonts.
+1) To properly view some of the pcb file's text elements, you may need to  download and install "Routed Gothic" font located in `/doc/`. This is the closest match I have found to the original PCB lettering in font form and is based on the Leroy stenciling system common with draftsman before computer fonts.
 
 2) I have a near certain guess that the original apple-1 pcb was designed using mils. Thus, I would strongly encourage any user working on this board to set their units to mils and not mm. The original PCB-11 file was most likely not made by an American, as there are many metric dimensions scattered throughout the document. However building in nice round mil numbers should be the standard for this project
 
-3) please submit a pull request listing in detail all changes you have made or would like to make, preferably with pictures. This can help avoid any duplicate work
+3) please submit a pull request listing in detail all changes you have made or would like to make, preferably with pictures. This can help avoid any duplicate work. I can infer many changes by inspecting the changed files as text, but a more human-readable explanation helps.
 
 4) Issues can also be raised, which I also enthusiastically accept. If you spot issues with the design of the board, please post an issue to the repository.
 
