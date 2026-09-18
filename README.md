@@ -1,7 +1,11 @@
 ![Doppel-1 Current Status](/img/doppel1status.png)
+Doppel-1 As of 2026/09/18
 
 # About the "Doppel-1"
 This repository contains the "Doppel-1", an Apple-1 Replica PCB. It is unique among clone boards in that the source design files are completely open-source, and It is built in standard EDA fashion, where each component on the board is linked to a symbol on a full schematic of the apple-1. This also allows for generating gerber files at the source, easy modification, and the ability to highlight trace sets on the board via the net selector. This makes it very useful when diagnosing build issues. It also features a near full set of 3d components, which allows an accurate step file to be exported.
+
+![Doppel-1 3D](/img/d13d.png)
+Doppel-1 within KiCad 3D Viewer
 
 Great care has been taken to create a custom library of footprints that match the original apple-1. In fact, every symbol on the board is custom. This preserves the aesthetics of the pads and silkscreens while allowing for pin-pin linkage from the schematic.
 
