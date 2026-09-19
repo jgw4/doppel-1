@@ -23,8 +23,6 @@ This project started by importing the gerber files for the "PCB-11" replica that
 * Proper widths and clearances still need assigned to all traces, ensuring proper spacing from all solder pads and enforcing a more rigorous Design Rules Check.
 * I am still not entirely certain the board mounting holes are in the correct position. I had modified it slightly see point 7 below.
 * a few remaining schematic parity errors.
-* some copper layer graphics are still drawn as tracks from the gerber import. These need converted to graphic shapes to satisfy DRC warnings
-* the edge connector fingers still contain gerber fill tracks instead of native kicad filled shapes. this needs to be created and turned into a footprint.
 * some footprints still don't have 3d models assigned. I think at this time only the molex 4-pin and 6-pin
 * I would like to develop a custom font based off the text on this board, so it can be applied as text elements rather than drawn shapes.
 

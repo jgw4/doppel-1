@@ -558,6 +558,7 @@
       "netlist": "apple1.net",
       "plot": "../",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": "kicad-embed://apple1template.kicad_wks"
